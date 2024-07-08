@@ -1,53 +1,54 @@
 /// @description Insert description here
-// You can write your code in this editor
 
 //variables
 walkSpeed = 16;
-vx = 0;
-vy = 0;
-dir = 3;
-moveRight = 0;
-moveLeft = 0;
-moveUp = 0;
-moveDown = 0;
+var _vx = 0;
+var _vy = 0;
+var dir = 3;
 
 // detect key press
-while (keyboard_check_pressed(vk_up)) {
-	moveUp = 1;
-}
-while (keyboard_check_released(vk_up)) {
-	moveUp = 0;
-}
-while (keyboard_check_pressed(vk_down)) {
-	moveDown = 1;
-}
-while (keyboard_check_released(vk_down)) {
-	moveDown = 0;
-}
-while (keyboard_check_pressed(vk_right)) {
-	moveRight = 1;
-}
-while (keyboard_check_released(vk_right)) {
-	moveRight = 0;
-}
-while (keyboard_check_pressed(vk_left)) {
-	moveLeft = 1;
-}
-while (keyboard_check_released(vk_left)) {
-	moveLeft = 0;
-}
+moveRight = (keyboard_check(ord("D")));
+moveLeft = (keyboard_check(ord("A")));
+moveUp = (keyboard_check(ord("W")));
+moveDown = (keyboard_check(ord("S")));
 
 // calculate movement
-vx = ((moveRight - moveLeft) * walkSpeed);
-vy = ((moveDown - moveUp) * walkSpeed);
+_vx = ((moveRight - moveLeft) * walkSpeed);
+_vy = ((moveDown - moveUp) * walkSpeed);
 
 // if idle
-if (vx == 0 && vy == 0) {
-	// do nothin for now
+if (_vx == 0 && _vy == 0) {
+	
+// change idle Sprite based on last direction
+//	switch dir {
+//	case 0: sprite_index = spr_player_idle_right; break;
+//	case 1: sprite_index = spr_player_idle_up; break;
+//	case 2: sprite_index = spr_player_idle_left; break;
+//	case 3: sprite_index = spr_player_idle_down; break;
+//	}
 }
 
 // if moving
-if (vx != 0 || vy != 0) {
-	x += vx;
-	y += vy;
+if (_vx != 0 || _vy != 0) {
+	x += _vx;
+	y += _vy;
+	
+	// change walking Sprite based on direction
+//	if (vx > 0) {
+//	sprite_index = spr_player_walk_right;
+//	dir = 0;
+//	}
+//	if (vx < 0) {
+//	sprite_index = spr_player_walk_left;
+//	dir = 2;
+//	}
+//	if (vy > 0) {
+//	sprite_index = spr_player_walk_down;
+//	Little Town – Instructor Guide v1.4 36
+//	dir = 3;
+//	}
+//	if (vy < 0) {
+//		sprite_index = spr_player_walk_up;
+//	dir	 = 1;
+//	}
 }
