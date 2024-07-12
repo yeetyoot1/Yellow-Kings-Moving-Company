@@ -30,8 +30,12 @@ if (_vx == 0 && _vy == 0) {
 
 // if moving
 if (_vx != 0 || _vy != 0) {
-	x += _vx;
-	y += _vy;
+	if !collision_point(x+vx,y,obj_par_environment,true,true){
+		x += vx;	
+	}
+	if !collision_point(x+vx,y,obj_par_environment,true,true){
+		y += _vy;
+	}
 	
 	// change walking Sprite based on direction
 //	if (vx > 0) {
