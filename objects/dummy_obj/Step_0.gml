@@ -30,10 +30,10 @@ if (_vx == 0 && _vy == 0) {
 
 // if moving
 if (_vx != 0 || _vy != 0) {
-	if !collision_point(x+vx,y,obj_par_environment,true,true){
-		x += vx;	
+	if !collision_point(x+_vx,y,obj_par_environment,true,true){
+		x += _vx;	
 	}
-	if !collision_point(x+vx,y,obj_par_environment,true,true){
+	if !collision_point(x,y+_vy,obj_par_environment,true,true){
 		y += _vy;
 	}
 	

@@ -35,6 +35,8 @@
   "name":"BLANK GAME",
   "resources":[
     {"id":{"name":"dummy_obj","path":"objects/dummy_obj/dummy_obj.yy",},},
+    {"id":{"name":"dummy_obj1","path":"objects/dummy_obj1/dummy_obj1.yy",},},
+    {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"dummy_sprite1","path":"sprites/dummy_sprite1/dummy_sprite1.yy",},},
