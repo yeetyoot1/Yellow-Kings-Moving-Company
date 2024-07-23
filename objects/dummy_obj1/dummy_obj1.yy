@@ -35,5 +35,5 @@
     "path":"sprites/dummy_sprite1/dummy_sprite1.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
