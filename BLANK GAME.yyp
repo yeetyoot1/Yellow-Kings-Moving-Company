@@ -39,6 +39,7 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"dummy_sprite1","path":"sprites/dummy_sprite1/dummy_sprite1.yy",},},
     {"id":{"name":"Sprite_Left","path":"sprites/Sprite_Left/Sprite_Left.yy",},},
+    {"id":{"name":"Sprite_Right","path":"sprites/Sprite_Right/Sprite_Right.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
