@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"dummy_sprite1",
-    "path":"sprites/dummy_sprite1/dummy_sprite1.yy",
+    "name":"Sprite4",
+    "path":"sprites/Sprite4/Sprite4.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
